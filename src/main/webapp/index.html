@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form đăng ký thông tin khách hàng</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        .form-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 400px; /* Cố định chiều rộng của form */
+        }
+        h1 {
+            color: blue;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        p {
+            margin-bottom: 20px;
+            font-size: 14px;
+            color: #555;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            text-align: left;
+        }
+        input[type="text"],
+        input[type="date"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin: 0 5px 0 0;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        input[type="submit"]:hover {
+            background-color: darkblue;
+        }
+        a {
+            display: block;
+            margin-top: 20px;
+            color: blue;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Form đăng ký thông tin khách hàng</h1>
+        <p>Form này được tạo ra với mục đích nhập dữ liệu và thông tin của khách hàng tham gia mua sản phẩm</p>
+        <form>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email">
+            
+            <label>Họ và tên:</label>
+            <input type="text" name="fullname">
+            
+            <label for="dob">Ngày Sinh:</label>
+            <input type="date" id="dob" name="dob">
+            
+            <label>Địa chỉ:</label>
+            <input type="text" name="address">
+            
+            <label for="city">Thành Phố:</label>
+            <select id="city" name="city">
+                <option value=""></option>
+                <option value="hanoi">Hà Nội</option>
+                <option value="hcm">Hồ Chí Minh</option>
+                <option value="danang">Đà Nẵng</option>
+                <option value="haiphong">Hải Phòng</option>
+                <option value="cantho">Cần Thơ</option>
+                <option value="quangnam">Quảng Nam</option>
+                <option value="quangngai">Quảng Ngãi</option>
+                <option value="hatinh">Hà Tĩnh</option>
+                <option value="quangbing">Quảng Bình</option>
+                <option value="hue">Huế</option>
+            </select>
+            
+            <label>Giới tính:</label>
+            <input type="radio" name="gender" value="male"> Nam
+            <input type="radio" name="gender" value="female"> Nữ
+            <input type="radio" name="gender" value="other"> Khác
+            
+            <label>Nghề Nghiệp:</label>
+            <input type="text" name="occupation">
+            
+            <label>Giao Hàng:</label>
+            <input type="checkbox" value="taihoc"> Tại nhà
+            <input type="checkbox" value="taicoquan"> Tại cơ quan
+            <input type="checkbox" value="khac"> Khác
+            
+            <input type="submit" value="Đăng ký">
+        </form>
+        <a href="https://phimmoichillv.net/">Link xem phim Full HD không che</a>
+    </div>
+</body>
+</html>
