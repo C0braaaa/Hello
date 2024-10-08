@@ -17,6 +17,7 @@ public class demo extends HttpServlet {
    
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		response.getWriter().write("<h1>Hello World</h1>");
+		response.getWriter().write("<h1 style=\"color: blue\">Hello World</h1>");
+
 	}
 }

@@ -9,7 +9,7 @@
     		table 
     		{
         		border-collapse: collapse;
-        		width: 90%;
+        		width: 100%;
         		border: 2px solid black;
     		}
     		td, th 
@@ -22,13 +22,16 @@
     		{
        			background-color: #f2f2f2; /* Tạo màu nền xám nhạt cho hàng chẵn */
     		}
-    		th 
+    		h1
     		{
-        		font-weight: bold; /* In đậm nội dung hàng đầu */
+    		    text-align: center;
+    		    text-align: bold;
+    		    color: blue;
     		}
 </style>
 	</head>
 	<body>
+		<h1>Đây là bảng</h1>
 		<table>
 			<tr>
 				<th>First Name</th>
